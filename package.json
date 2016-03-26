@@ -1,0 +1,20 @@
+{
+  "name": "react-npm-example",
+  "version": "1.0.0",
+  "description": "Using React from npm",
+  "scripts": {
+    "start": "npm run build && npm run server",
+    "server": "http-server public -p 9292",
+    "build": "browserify -t [ babelify --presets [ react ] ] src -o public/js/app.js"
+  },
+  "author": "Khomitsky",
+  "dependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "browserify": "^13.0.0",
+    "http-server": "^0.9.0",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}
